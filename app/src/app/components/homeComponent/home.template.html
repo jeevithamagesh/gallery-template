@@ -1,0 +1,26 @@
+<div fxLayout="column " fxFlex="100" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+  <div fxLayout="row " style="width:100%" fxLayoutAlign="start start" fxShow="true" fxHide="false">
+    <mat-toolbar color="primary"></mat-toolbar>
+  </div>
+  <div fxLayout="row " style="width:50%" fxFlex="100" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+    <mat-card style="width: 68%;height:260px;">
+      <div fxLayout="row " style="height:30px;    margin-bottom: 55px;background-color:grey;" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+        <h3>Login</h3>
+      </div>
+      <mat-card-content>
+        <form>
+          <div fxLayout="column " fxFlex="100" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+            <mat-form-field>
+              <input matInput="" [(ngModel)]="username" name="username" type="text" placeholder="Username" required>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput="" [(ngModel)]="password" name="password" type="password" placeholder="Password" required>
+            </mat-form-field>
+            <mat-checkbox labelPosition="remember" required>Remember me</mat-checkbox>
+            <button mat-raised-button="" class="alternate-theme " color="primary" (click)="submit()">login</button>
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
